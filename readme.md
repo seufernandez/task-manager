@@ -117,6 +117,18 @@ A API do backend é documentada usando Swagger. Para acessar a documentação in
 ```
 http://localhost:3000/api
 ```
+![image](https://github.com/user-attachments/assets/a9af389d-5d63-44d1-a76f-18a6e6c6b26e)
+
+---
+
+## 📖 Preview da Aplicação
+
+![image](https://github.com/user-attachments/assets/cad1114b-f1d9-4689-9cb1-aadcf9882436)
+![image](https://github.com/user-attachments/assets/9fd6cef7-9efe-44a8-be04-31836a90caca)
+![image](https://github.com/user-attachments/assets/c49b24d3-f210-41f9-847b-048707016b2e)
+![image](https://github.com/user-attachments/assets/6ef4a37b-0abf-4bc8-9a16-b77e14cc8b20)
+![image](https://github.com/user-attachments/assets/0381be45-cc97-4278-92b5-f0a37de047d0)
+
 
 ---
 
