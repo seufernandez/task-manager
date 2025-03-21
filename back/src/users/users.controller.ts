@@ -8,6 +8,7 @@ import {
   NotFoundException,
   HttpCode,
   HttpStatus,
+  UseInterceptors,
 } from '@nestjs/common';
 import { 
   ApiTags, 
@@ -20,9 +21,11 @@ import { UsersService } from './users.service';
 import { User } from './user.entity';
 import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 import { RegisterUserDto } from './dto/register-user.dto';
+import { CacheInterceptor, CacheKey, CacheTTL } from '@nestjs/cache-manager';
 
 @ApiTags('users')
 @Controller('users')
+@UseInterceptors(CacheInterceptor)
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
 
@@ -66,6 +69,8 @@ export class UsersController {
     status: 404, 
     description: 'User not found' 
   })
+  @CacheKey('my-user')
+  @CacheTTL(10000)
   async getUserProfile(@Request() req): Promise<Omit<User, 'password'>> {
     const userId = req.user.sub;
     const user = await this.usersService.findById(userId);

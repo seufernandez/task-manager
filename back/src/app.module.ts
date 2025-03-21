@@ -7,10 +7,16 @@ import { TasksModule } from './tasks/tasks.module';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { ConfigModule } from '@nestjs/config';
+import { CacheModule } from '@nestjs/cache-manager';
 
 @Module({
   imports: [
     ConfigModule.forRoot(),
+    CacheModule.register({
+      isGlobal: true,
+      ttl: 5000,
+      max: 10,
+    }),
     ThrottlerModule.forRoot({
       throttlers: [
         {
