@@ -63,7 +63,10 @@ Isso instalará as dependências tanto do frontend quanto do backend.
     DATABASE_NAME=todo_list
     JWT_SECRET=your_jwt_secret
     ```
-  - O frontend (`/front`) deve funcionar com as configurações padrão, mas você pode ajustar `vite.config.js` se necessário.
+  - O frontend (`/front`), crie um arquivo `.env` com as seguintes variáveis (ou renomeie `.env.example`, se fornecido):
+     ```
+    VITE_API_URL='http://localhost:3000'
+    ```
 
 ### 4️⃣ Rodando a Aplicação
 
