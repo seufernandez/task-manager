@@ -157,6 +157,15 @@ Este projeto implementa uma aplicação completa de Lista de Tarefas com autenti
 
 ---
 
+## 🚀 Melhoria Implementada
+
+Integração com Caching: Adicionada integração com caching para melhorar o desempenho da aplicação, especificamente na rota GET /users/me. 
+
+
+Agora, a resposta de dados do usuário autenticado é armazenada em cache, reduzindo a necessidade de consultas repetidas ao banco de dados e proporcionando uma experiência mais rápida para o usuário.
+
+---
+
 ## 📝 Lógica de Negócio
 
 1. **Autenticação**
