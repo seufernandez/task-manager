@@ -1,0 +1,21 @@
+{
+  "name": "todo-list-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm run install:back && npm run install:front",
+    "install:back": "cd back && npm i",
+    "install:front": "cd front && npm i",
+    "start:db": "cd back && docker-compose up -d",
+    "wait:db": "wait-on tcp:localhost:5432",
+    "seed": "cd back && npx ts-node src/database/seed.ts",
+    "start:back": "cd back && npm run start:dev",
+    "start:front": "cd front && npm run dev",
+    "start:services": "concurrently \"npm run start:back\" \"npm run start:front\"",
+    "start:all": "npm run start:db && npm run wait:db && npm run start:services"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "wait-on": "^7.0.1"
+  }
+}
