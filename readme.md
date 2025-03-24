@@ -44,7 +44,7 @@ Clone este repositório e instale as dependências:
 
 ```bash
 git clone https://github.com/seufernandez/task-manager.git
-cd todo-list-monorepo
+cd task-manager
 npm run install:all
 ```
 
@@ -151,6 +151,7 @@ Este projeto implementa uma aplicação completa de Lista de Tarefas com autenti
 ## 🚀 Melhorias Futuras
 
 - Filtragem e busca avançada de tarefas.
+- Testes de Integração
 - Suporte a categorias ou etiquetas para tarefas.
 - Notificações push para lembretes de tarefas.
 - Criptografia de ponta a ponta para maior segurança.
