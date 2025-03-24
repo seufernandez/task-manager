@@ -151,10 +151,20 @@ Este projeto implementa uma aplicação completa de Lista de Tarefas com autenti
 ## 🚀 Melhorias Futuras
 
 - Filtragem e busca avançada de tarefas.
-- Testes de Integração
 - Suporte a categorias ou etiquetas para tarefas.
 - Notificações push para lembretes de tarefas.
 - Criptografia de ponta a ponta para maior segurança.
+- Aprimorar validações de dados de entrada e Mappers de saída
+
+---
+
+## 🧪 Testes
+
+Execute os testes de ponta a ponta para verificar o fluxo da aplicação.
+
+```bash
+npm run test
+```
 
 ---
 
