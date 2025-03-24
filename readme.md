@@ -18,6 +18,7 @@ Este repositório contém a implementação de uma aplicação full-stack de Lis
   - TypeORM (ORM para PostgreSQL)
   - JWT e Passport (autenticação)
   - Swagger (documentação da API)
+  - Supertest and @nestjs/testing (Testes E2E)
 - **Banco de Dados**:
   - PostgreSQL (rodando via Docker)
 - **Outras Dependências**:
