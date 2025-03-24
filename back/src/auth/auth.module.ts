@@ -9,8 +9,6 @@ import { AuthController } from './auth.controller';
   imports: [
     UsersModule,
     JwtModule.register({
-      secret: process.env.JWT_SECRET_KEY,
-      signOptions: { expiresIn: '1h' },
     }),
   ],
   providers: [AuthService, JwtAuthGuard],
